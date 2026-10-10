@@ -1,0 +1,162 @@
+[
+  {
+    "id": "m1",
+    "name": "Chicken Adobo",
+    "category": "Ulam",
+    "description": "Classic tender chicken simmered in soy sauce, vinegar, garlic, and peppercorns.",
+    "price": 140.00,
+    "available": true,
+    "stock": 50,
+    "image": ""
+  },
+  {
+    "id": "m2",
+    "name": "Pork Adobo",
+    "category": "Ulam",
+    "description": "Savory pork belly chunks marinated and braised in rich adobo sauce.",
+    "price": 150.00,
+    "available": true,
+    "stock": 40,
+    "image": ""
+  },
+  {
+    "id": "m3",
+    "name": "Pork Sinigang",
+    "category": "Ulam",
+    "description": "Sour tamarind broth with tender pork ribs, radish, eggplant, and kangkong.",
+    "price": 170.00,
+    "available": true,
+    "stock": 35,
+    "image": ""
+  },
+  {
+    "id": "m4",
+    "name": "Chicken Afritada",
+    "category": "Ulam",
+    "description": "Chicken stewed in tomato sauce with potatoes, carrots, and bell peppers.",
+    "price": 145.00,
+    "available": true,
+    "stock": 30,
+    "image": ""
+  },
+  {
+    "id": "m5",
+    "name": "Pork Menudo",
+    "category": "Ulam",
+    "description": "Diced pork, liver, potatoes, and carrots in a rich seasoned tomato base.",
+    "price": 145.00,
+    "available": true,
+    "stock": 25,
+    "image": ""
+  },
+  {
+    "id": "m6",
+    "name": "Ginisang Monggo",
+    "category": "Vegetables",
+    "description": "Savory mashed mung bean stew sautéed with garlic, onions, tomatoes, and chicharon bits.",
+    "price": 90.00,
+    "available": true,
+    "stock": 45,
+    "image": ""
+  },
+  {
+    "id": "m7",
+    "name": "Fried Bangus",
+    "category": "Ulam",
+    "description": "Crispy golden-fried marinated milkfish served with vinegar dipping sauce.",
+    "price": 160.00,
+    "available": true,
+    "stock": 20,
+    "image": ""
+  },
+  {
+    "id": "m8",
+    "name": "Fried Tilapia",
+    "category": "Ulam",
+    "description": "Fresh whole tilapia fried to a crisp perfection.",
+    "price": 130.00,
+    "available": true,
+    "stock": 25,
+    "image": ""
+  },
+  {
+    "id": "m9",
+    "name": "Tapsilog",
+    "category": "Silog Meals",
+    "description": "Cured beef tapa served with garlic fried rice (sinangag) and a sunny-side-up egg.",
+    "price": 150.00,
+    "available": true,
+    "stock": 60,
+    "image": ""
+  },
+  {
+    "id": "m10",
+    "name": "Longsilog",
+    "category": "Silog Meals",
+    "description": "Sweet Filipino pork longganisa paired with garlic rice and egg.",
+    "price": 130.00,
+    "available": true,
+    "stock": 50,
+    "image": ""
+  },
+  {
+    "id": "m11",
+    "name": "Hotsilog",
+    "category": "Silog Meals",
+    "description": "Pan-fried red hotdogs with garlic rice and egg.",
+    "price": 110.00,
+    "available": true,
+    "stock": 50,
+    "image": ""
+  },
+  {
+    "id": "m12",
+    "name": "Plain Rice",
+    "category": "Rice Meals",
+    "description": "Steamed white jasmine rice.",
+    "price": 25.00,
+    "available": true,
+    "stock": 200,
+    "image": ""
+  },
+  {
+    "id": "m13",
+    "name": "Garlic Rice",
+    "category": "Rice Meals",
+    "description": "Sautéed garlic fried rice.",
+    "price": 35.00,
+    "available": true,
+    "stock": 150,
+    "image": ""
+  },
+  {
+    "id": "m14",
+    "name": "Bottled Water",
+    "category": "Drinks",
+    "description": "500ml purified drinking water.",
+    "price": 25.00,
+    "available": true,
+    "stock": 100,
+    "image": ""
+  },
+  {
+    "id": "m15",
+    "name": "Soft Drinks (Coke/Sprite)",
+    "category": "Drinks",
+    "description": "330ml can soda.",
+    "price": 45.00,
+    "available": true,
+    "stock": 80,
+    "image": ""
+  },
+  {
+    "id": "m16",
+    "name": "Turon",
+    "category": "Snacks",
+    "description": "Banana saba and jackfruit wrapped in spring roll wrapper, fried with brown sugar coat.",
+    "price": 30.00,
+    "available": true,
+    "stock": 40,
+    "image": ""
+  }
+]
