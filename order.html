@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Karenderya POS - Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="app">
+    <nav id="side-menu">
+      <strong class="logo">K</strong>
+      <a id="link-floor" href="index.html" class="active"><span>▦</span>Floor</a>
+      <a id="link-orders" href="orders.html"><span>☰</span>Orders</a>
+      <a id="link-menu" href="menu.html"><span>✎</span>Menu</a>
+      <a id="link-receipts" href="receipts.html"><span>▤</span>Receipts</a>
+      <a id="link-settings" href="settings.html"><span>⚙</span>Setup</a>
+    </nav>
+    <header id="top-bar">
+      <strong id="shop-name"></strong>
+      <span id="date-time"></span>
+      <span>Cashier: <b id="cashier-name"></b></span>
+      <button onclick="newTakeaway()">+ Takeaway</button>
+    </header>
+    <main id="order">
+      <nav id="category-list"></nav>
+      <section id="food-area">
+        <input id="search-box" type="search" autocomplete="off" placeholder="Search food... e.g. adobo, sinigang, turon, iced tea" oninput="onSearch()">
+        <section id="food-grid" class="food-grid"></section>
+      </section>
+      <aside id="ticket">
+        <header>
+          <strong id="ticket-title"></strong>
+          <p id="ticket-total" class="mono"></p>
+        </header>
+        <section>
+          <h3>Already sent</h3>
+          <ul id="sent-list"></ul>
+          <h3>New order (not sent yet)</h3>
+          <ul id="new-list"></ul>
+        </section>
+        <footer>
+          <p class="big-total"><span>This order</span><span id="new-total" class="mono"></span></p>
+          <button class="red-button" onclick="sendOrder()">Send order to kitchen</button>
+          <button class="light-button" onclick="clearDraft()">Clear new order</button>
+          <button class="light-button" onclick="showPage('floor')">Back to floor</button>
+          <button onclick="goBill()">Done ordering → Billing</button>
+        </footer>
+      </aside>
+    </main>
+  </section>
+  <script src="js/common.js"></script>
+  <script src="js/order.js"></script>
+  <script>loadData();</script>
+</body>
+</html>

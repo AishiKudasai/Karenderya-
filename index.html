@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Karenderya POS - Floor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="app">
+    <nav id="side-menu">
+      <strong class="logo">K</strong>
+      <a id="link-floor" href="index.html" class="active"><span>▦</span>Floor</a>
+      <a id="link-orders" href="orders.html"><span>☰</span>Orders</a>
+      <a id="link-menu" href="menu.html"><span>✎</span>Menu</a>
+      <a id="link-receipts" href="receipts.html"><span>▤</span>Receipts</a>
+      <a id="link-settings" href="settings.html"><span>⚙</span>Setup</a>
+    </nav>
+    <header id="top-bar">
+      <strong id="shop-name"></strong>
+      <span id="date-time"></span>
+      <span>Cashier: <b id="cashier-name"></b></span>
+      <button onclick="newTakeaway()">+ Takeaway</button>
+    </header>
+    <main id="floor">
+      <h2>Floor — tap a table</h2>
+      <p class="key">
+        <b class="k-free">Available</b>
+        <b class="k-reserved">Reserved</b>
+        <b class="k-taken">Occupied</b>
+      </p>
+      <section id="table-board" class="table-board"></section>
+      <section id="takeaway-area" hidden>
+        <h2>Open takeaway</h2>
+        <section id="takeaway-board" class="table-board"></section>
+      </section>
+      <section id="reservation-area" hidden>
+        <h2>Reservations</h2>
+        <table class="list">
+          <thead><tr><th>Table</th><th>Name</th><th>Guests</th><th>When</th><th></th></tr></thead>
+          <tbody id="reservation-rows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <!-- pop-up box: seat / reserve / reserved table -->
+    <section id="table-box" hidden onclick="closeBox()">
+      <section id="box-panel" onclick="event.stopPropagation()">
+        <h1 id="box-title"></h1>
+        <p id="box-info" class="muted"></p>
+        <hr>
+
+        <section id="box-free">
+          <p id="box-tabs" class="buttons">
+            <button id="tab-seat" class="light-button tab" onclick="showTab('seat')">Seat now</button>
+            <button id="tab-reserve" class="light-button tab" onclick="showTab('reserve')">Reserve</button>
+          </p>
+          <p>Customer name</p>
+          <input id="box-name" placeholder="e.g. Maria Santos (leave blank for walk-in)">
+          <section id="guests-area">
+            <p>Guests</p>
+            <input id="box-guests" type="number" min="1" placeholder="How many people?">
+          </section>
+          <section id="when-area">
+            <p id="when-label">Date and time</p>
+            <input id="box-when" type="datetime-local" oninput="showWhen()">
+            <p class="quick">
+              <button id="quick-now" class="light-button" onclick="quickTime('now')" hidden>Now</button>
+              <button id="quick-30" class="light-button" onclick="quickTime('min30')" hidden>In 30 min</button>
+              <button class="light-button" onclick="quickTime('hour1')">In 1 hour</button>
+              <button class="light-button" onclick="quickTime('hour2')">In 2 hours</button>
+              <button class="light-button" onclick="quickTime('today6')">Today 6 PM</button>
+              <button class="light-button" onclick="quickTime('tom12')">Tomorrow 12 PM</button>
+              <button class="light-button" onclick="quickTime('tom6')">Tomorrow 6 PM</button>
+            </p>
+            <p id="when-preview"></p>
+          </section>
+          <p id="box-error" class="error"></p>
+          <p class="buttons">
+            <button class="light-button" onclick="closeBox()">Close</button>
+            <button id="box-save" class="red-button" onclick="saveBox()">Seat customer</button>
+          </p>
+        </section>
+
+        <section id="box-reserved" hidden>
+          <p class="buttons"><button class="red-button" onclick="seatReserved()">Customer arrived — seat now</button></p>
+          <p class="buttons">
+            <button class="light-button" onclick="editFromBox()">Edit</button>
+            <button class="danger-button" onclick="cancelFromBox()">Cancel reservation</button>
+          </p>
+          <p class="buttons"><button class="light-button" onclick="closeBox()">Close</button></p>
+        </section>
+      </section>
+    </section>
+  </section>
+  <script src="js/common.js"></script>
+  <script src="js/floor.js"></script>
+  <script>loadData();</script>
+</body>
+</html>

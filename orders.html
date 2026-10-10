@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Karenderya POS - Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="app">
+    <nav id="side-menu">
+      <strong class="logo">K</strong>
+      <a id="link-floor" href="index.html"><span>▦</span>Floor</a>
+      <a id="link-orders" href="orders.html" class="active"><span>☰</span>Orders</a>
+      <a id="link-menu" href="menu.html"><span>✎</span>Menu</a>
+      <a id="link-receipts" href="receipts.html"><span>▤</span>Receipts</a>
+      <a id="link-settings" href="settings.html"><span>⚙</span>Setup</a>
+    </nav>
+    <header id="top-bar">
+      <strong id="shop-name"></strong>
+      <span id="date-time"></span>
+      <span>Cashier: <b id="cashier-name"></b></span>
+      <button onclick="newTakeaway()">+ Takeaway</button>
+    </header>
+    <main id="orders">
+      <h2>Orders</h2>
+      <table class="list">
+        <thead><tr><th>#</th><th>Table</th><th>Items</th><th>Total</th><th>Status</th><th></th></tr></thead>
+        <tbody id="order-rows"></tbody>
+      </table>
+    </main>
+  </section>
+  <script src="js/common.js"></script>
+  <script src="js/orders.js"></script>
+  <script>loadData();</script>
+</body>
+</html>

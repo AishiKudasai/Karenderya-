@@ -1,0 +1,49 @@
+{
+  "tables": [
+    { "no": "1", "seats": 4 },
+    { "no": "2", "seats": 4 },
+    { "no": "3", "seats": 4 },
+    { "no": "4", "seats": 4 },
+    { "no": "5", "seats": 4 },
+    { "no": "6", "seats": 4 },
+    { "no": "7", "seats": 6 },
+    { "no": "8", "seats": 6 },
+    { "no": "9", "seats": 6 },
+    { "no": "10", "seats": 6 }
+  ],
+  "sessions": [],
+  "menu": [
+    { "name": "Chicken Adobo", "category": "Ulam", "price": 65, "image": "images/chicken-adobo.jpg", "available": true },
+    { "name": "Pork Adobo", "category": "Ulam", "price": 70, "image": "images/pork-adobo.jpg", "available": true },
+    { "name": "Pork Sinigang", "category": "Ulam", "price": 85, "image": "images/pork-sinigang.jpg", "available": true },
+    { "name": "Chicken Afritada", "category": "Ulam", "price": 65, "image": "images/chicken-afritada.jpg", "available": true },
+    { "name": "Pork Menudo", "category": "Ulam", "price": 70, "image": "images/pork-menudo.jpg", "available": true },
+    { "name": "Fried Bangus", "category": "Ulam", "price": 80, "image": "images/fried-bangus.jpg", "available": true },
+    { "name": "Fried Tilapia", "category": "Ulam", "price": 75, "image": "images/fried-tilapia.jpg", "available": true },
+    { "name": "Ginisang Monggo", "category": "Vegetables", "price": 45, "image": "images/monggo.jpg", "available": true },
+    { "name": "Pinakbet", "category": "Vegetables", "price": 50, "image": "images/pinakbet.jpg", "available": true },
+    { "name": "Tapsilog", "category": "Silog Meals", "price": 95, "image": "images/tapsilog.jpg", "available": true },
+    { "name": "Longsilog", "category": "Silog Meals", "price": 85, "image": "images/longsilog.jpg", "available": true },
+    { "name": "Hotsilog", "category": "Silog Meals", "price": 75, "image": "images/hotsilog.jpg", "available": true },
+    { "name": "Chicken Adobo Meal", "category": "Rice Meals", "price": 85, "image": "images/adobo-meal.jpg", "available": true },
+    { "name": "Turon", "category": "Snacks", "price": 20, "image": "images/turon.jpg", "available": true },
+    { "name": "Pancit Bihon", "category": "Snacks", "price": 50, "image": "images/pancit.jpg", "available": true },
+    { "name": "Bottled Water", "category": "Drinks", "price": 20, "image": "images/water.jpg", "available": true },
+    { "name": "Soft Drink", "category": "Drinks", "price": 30, "image": "images/softdrink.jpg", "available": true },
+    { "name": "Iced Tea", "category": "Drinks", "price": 25, "image": "images/iced-tea.jpg", "available": true },
+    { "name": "Rice", "category": "Extras", "price": 15, "image": "images/rice.jpg", "available": true },
+    { "name": "Fried Egg", "category": "Extras", "price": 15, "image": "images/egg.jpg", "available": true }
+  ],
+  "receipts": [],
+  "orderCount": 0,
+  "receiptCount": 0,
+  "shop": {
+    "name": "Karenderya ni Aling Nena",
+    "address": "123 Barangay Road, Quezon City",
+    "phone": "0917 000 0000",
+    "cashier": "Staff",
+    "footer": "Salamat po! Balik kayo.",
+    "discount": 20
+  },
+  "reservations": []
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Karenderya POS - Bill</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="app">
+    <nav id="side-menu">
+      <strong class="logo">K</strong>
+      <a id="link-floor" href="index.html" class="active"><span>▦</span>Floor</a>
+      <a id="link-orders" href="orders.html"><span>☰</span>Orders</a>
+      <a id="link-menu" href="menu.html"><span>✎</span>Menu</a>
+      <a id="link-receipts" href="receipts.html"><span>▤</span>Receipts</a>
+      <a id="link-settings" href="settings.html"><span>⚙</span>Setup</a>
+    </nav>
+    <header id="top-bar">
+      <strong id="shop-name"></strong>
+      <span id="date-time"></span>
+      <span>Cashier: <b id="cashier-name"></b></span>
+      <button onclick="newTakeaway()">+ Takeaway</button>
+    </header>
+    <main id="bill">
+      <section class="paper">
+        <h2 id="bill-title"></h2>
+        <p id="discount-status"></p>
+        <p><button id="discount-button" onclick="toggleDiscount()"></button></p>
+        <hr>
+        <table class="list">
+          <thead><tr><th>Order</th><th>Food</th><th>Qty</th><th>Price</th></tr></thead>
+          <tbody id="bill-rows"></tbody>
+        </table>
+        <table class="totals">
+          <tr><td>Subtotal</td><td id="bill-subtotal"></td></tr>
+          <tr><td>Discount</td><td id="bill-discount"></td></tr>
+          <tr><td><b>Total due</b></td><td id="bill-due"></td></tr>
+          <tr><td>Paid so far</td><td id="bill-paid"></td></tr>
+          <tr><td><b>Balance</b></td><td id="bill-balance"></td></tr>
+        </table>
+        <section id="payment-box" class="box">
+          <h3>Payment</h3>
+          <p>Amount to collect now (can be partial)</p>
+          <input id="collect" type="number" step="0.01" placeholder="Amount to collect, e.g. 150.00" oninput="showChange()">
+          <p>Cash received</p>
+          <input id="cash" type="number" step="0.01" placeholder="Cash from the customer, e.g. 200.00" oninput="showChange()">
+          <p id="change" class="mono"></p>
+          <p class="buttons">
+            <button class="light-button" onclick="showPage('order')">← Add more food</button>
+            <button id="pay-button" class="red-button" onclick="payNow()">Record payment</button>
+          </p>
+        </section>
+        <p id="finish-box" class="buttons" hidden>
+          <button class="red-button" onclick="finishCheckout()">Finish and release table</button>
+        </p>
+      </section>
+    </main>
+  </section>
+  <script src="js/common.js"></script>
+  <script src="js/bill.js"></script>
+  <script>loadData();</script>
+</body>
+</html>
