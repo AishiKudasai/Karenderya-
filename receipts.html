@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Karenderya POS - Receipts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="app">
+    <nav id="side-menu">
+      <a id="link-floor" href="index.html"><span>▦</span>Tables</a>
+      <a id="link-orders" href="orders.html"><span>☰</span>Orders</a>
+      <a id="link-menu" href="menu.html"><span>✎</span>Menu</a>
+      <a id="link-receipts" href="receipts.html" class="active"><span>▤</span>Receipts</a>
+      <a id="link-settings" href="settings.html"><span>⚙</span>Settings</a>
+    </nav>
+    <header id="top-bar">
+      <strong class="logo">K</strong>
+      <strong id="shop-name"></strong>
+      <span id="date-time"></span>
+      <span class="cashier"><i id="avatar"></i>Cashier: <b id="cashier-name"></b></span>
+    </header>
+    <main id="receipts">
+      <h2>Receipt history</h2>
+      <table class="list">
+        <thead><tr><th>Receipt</th><th>Orders</th><th>Paid</th><th>Discount</th><th>Date</th><th></th></tr></thead>
+        <tbody id="receipt-rows"></tbody>
+      </table>
+    </main>
+  </section>
+  <script src="js/common.js"></script>
+  <script src="js/receipts.js"></script>
+  <script>loadData();</script>
+</body>
+</html>

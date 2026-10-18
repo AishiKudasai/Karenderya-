@@ -1,0 +1,43 @@
+{
+  "tables": [
+    { "no": "1", "seats": 4, "location": "Near counter" },
+    { "no": "2", "seats": 4, "location": "Near counter" },
+    { "no": "3", "seats": 4, "location": "By the window" },
+    { "no": "4", "seats": 4, "location": "By the window" },
+    { "no": "5", "seats": 4, "location": "Near entrance" },
+    { "no": "6", "seats": 4, "location": "Near entrance" },
+    { "no": "7", "seats": 6, "location": "Garden side" },
+    { "no": "8", "seats": 6, "location": "Garden side" },
+    { "no": "9", "seats": 6, "location": "Near kitchen" },
+    { "no": "10", "seats": 6, "location": "Near kitchen" }
+  ],
+  "sessions": [],
+  "menu": [
+    { "name": "Chicken Adobo", "category": "Ulam", "price": 65, "image": "images/chicken-adobo.jpg", "available": true },
+    { "name": "Pork Adobo", "category": "Ulam", "price": 70, "image": "images/pork-adobo.jpg", "available": true },
+    { "name": "Pork Sinigang", "category": "Ulam", "price": 85, "image": "images/pork-sinigang.jpg", "available": true },
+    { "name": "Chicken Afritada", "category": "Ulam", "price": 65, "image": "images/chicken-afritada.jpg", "available": true },
+    { "name": "Pork Menudo", "category": "Ulam", "price": 70, "image": "images/pork-menudo.jpg", "available": true },
+    { "name": "Fried Bangus", "category": "Ulam", "price": 80, "image": "images/fried-bangus.jpg", "available": true },
+    { "name": "Ginisang Monggo", "category": "Vegetables", "price": 45, "image": "images/monggo.jpg", "available": true },
+    { "name": "Hotsilog", "category": "Silog Meals", "price": 75, "image": "images/hotsilog.jpg", "available": true },
+    { "name": "Pancit Bihon", "category": "Snacks", "price": 50, "image": "images/pancit.jpg", "available": true },
+    { "name": "Bottled Water", "category": "Drinks", "price": 20, "image": "images/water.jpg", "available": true },
+    { "name": "Soft Drink", "category": "Drinks", "price": 30, "image": "images/softdrink.jpg", "available": true },
+    { "name": "Iced Tea", "category": "Drinks", "price": 25, "image": "images/iced-tea.jpg", "available": true },
+    { "name": "Rice", "category": "Extras", "price": 15, "image": "images/rice.jpg", "available": true },
+    { "name": "Fried Egg", "category": "Extras", "price": 15, "image": "images/egg.jpg", "available": true }
+  ],
+  "receipts": [],
+  "orderCount": 0,
+  "receiptCount": 0,
+  "shop": {
+    "name": "Karenderya ni pogs",
+    "address": "Augusta St., Mercedes Village, Pasig City",
+    "phone": "0912 345 6789",
+    "cashier": "Pogs",
+    "footer": "Salamat po! Balik kayo.",
+    "discount": 20
+  },
+  "reservations": []
+}
